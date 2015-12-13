@@ -5,38 +5,27 @@
     android:orientation="vertical" >
 
     <TextView
+        android:id="@+id/hint"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/txtChooseApkFilePath" />
+        android:text="@string/pathOrPackageName" />
 
     <EditText
-        android:id="@+id/txtApkFilePath"
+        android:id="@+id/input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/txtApkFilePath" />
+        android:hint="@string/pathOrPackageName" />
 
     <Button
         android:id="@+id/btnInstall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btnInstall" />
-
-    <Button
-        android:id="@+id/btnInstall2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btnInstall" />
+        android:text="@string/install" />
 
     <Button
         android:id="@+id/btnUninstall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="卸载普通app" />
-
-    <Button
-        android:id="@+id/btnUninstall2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="卸载系统app" />
+        android:text="@string/uinstall" />
 
 </LinearLayout>

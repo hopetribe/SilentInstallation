@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">InstallInBackgroundSample</string>
-    <string name="txtApkFilePath">/system/app/Email.apk</string>
-    <string name="btnInstall">Install</string>
-    <string name="txtChooseApkFilePath">Choose the apk file path</string>
+
+    <string name="app_name">SilentInstallation</string>
+    <string name="install">安装</string>
+    <string name="uinstall">卸载</string>
+    <string name="pathOrPackageName">输入安装路径或者报名</string>
     <string name="error">An error occurred. Check the logcat.</string>
+
 </resources>
