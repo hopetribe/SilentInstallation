@@ -1,4 +1,4 @@
-package com.tencent.silentinstallation;
+package com.hopetribe.silentinstallation;
 
 
 import java.io.BufferedReader;

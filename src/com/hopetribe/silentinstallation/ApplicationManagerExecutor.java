@@ -1,4 +1,4 @@
-package com.tencent.silentinstallation;
+package com.hopetribe.silentinstallation;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -428,7 +428,7 @@ public class ApplicationManagerExecutor {
         Class<?>[] types = new Class[] { Uri.class, IPackageInstallObserver.class, int.class, String.class };
         method = pm.getClass().getMethod("installPackage", types);
 
-        Class<?>[] uninstalltypes = { String.class, IPackageDeleteObserver.class, Integer.TYPE };
+        Class<?>[] uninstalltypes = new Class[] { String.class, IPackageDeleteObserver.class, int.class };
         uninstallMethod = pm.getClass().getMethod("deletePackage", uninstalltypes);
     }
 
@@ -710,7 +710,7 @@ public class ApplicationManagerExecutor {
      */
     public void uninstallByReflection(String packagename) throws IllegalArgumentException, IllegalAccessException,
             InvocationTargetException {
-        uninstallMethod.invoke(pm, new Object[] { packagename, deleteObserver, 2 });
+        uninstallMethod.invoke(pm, new Object[] { packagename, deleteObserver, 0 });
     }
 
     /**
